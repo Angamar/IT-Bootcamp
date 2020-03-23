@@ -1,0 +1,136 @@
+<html>
+	<head>
+<title>MojiKontakti</title>
+<style>
+body {
+font-family: 'Comic Sans MS';
+width: 100%;
+}
+
+ul{
+font-size: 20;
+list-style-type: none;
+padding: 10 15;
+margin: 0;
+background-color: lightgray;
+/*ne treba da ima width ogranicenje*/
+}
+
+li {
+display: inline;
+}
+
+li a {
+color:gray;
+text-decoration: none;
+padding: 10 15;
+}
+
+li a:hover {
+background-color: black;
+color: white;
+}
+
+h1 {color:gold;
+text-align: center;
+}
+
+h2{padding: 0}
+
+img {
+  max-width: 100%;
+  
+  height: auto;
+}
+}
+table{ 
+border-spacing: 15px;
+text-align: center;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+td {
+
+border-radius: 50%;
+display: inline-block;
+text-align: center;
+width: 120;
+height:120;
+padding:20;
+margin:10;
+}
+
+#mb {
+color: greenyellow;
+border: 2px solid greenyellow;
+}
+
+#porodican { 
+color: blue;
+}
+.porodica td{
+border: 2px dotted blue;
+}
+#prijateljin {
+    color: green;
+}
+.prijatelji td{
+border: 2px dotted green;
+}
+#kolegen {
+color:red;
+}
+.kolege td{
+border: 2px dotted red;
+}
+</style>
+
+</head>
+
+<body>
+	<ul>
+	<li><a href="#porodican">Porodica</a></li>
+	<li><a href="#prijateljin">Prijatelji</a></li>
+	<li><a href="#kolegen">Kolege</a></li>
+	</ul>
+
+<h1>MOJI KONTAKTI</h1>
+<table>
+
+<th><h2 id="porodican">Porodica</h2></th>
+<tr class="porodica">
+    <td id="mb"><img src="zensko1.png"><br>Moj broj</td>
+    <td><img src="zensko2.png"><br>Mama</td>
+    <td><img src="musko.png"><br>Tata</td>
+    <td><img src="zensko2.png"><br>Sestra</td>
+    <td><img src="musko.png"><br>Brat</td>
+
+</tr>
+
+<th><h2 id="prijateljin">Prijatelji</h2></th>
+
+<tr class="prijatelji">
+        <td><img src="zensko2.png"><br>Katarina</td>
+        <td><img src="zensko2.png"><br>Sanja </td>
+        <td><img src="musko.png"><br>Petar</td>
+        <td><img src="zensko2.png"><br>Milica</td>
+        <td><img src="musko.png"><br>Janko</td>
+</tr>
+
+<th><h2 id="kolegen">Kolege</h2></th>
+
+<tr class="kolege">
+    <td><img src="zensko2.png"><br>Sanja</td>
+    <td><img src="musko.png"><br>Marko</td>
+    <td><img src="musko.png"><br>Petar</td>
+    <td><img src="zensko2.png"><br>Tijana</td>
+    <td><img src="zensko2.png"><br>Milena</td>
+</tr>
+
+</table>
+
+</body>
+	
+</html>

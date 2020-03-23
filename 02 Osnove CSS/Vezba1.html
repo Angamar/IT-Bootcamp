@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Prva veb stranica </title>
+		<style>
+		body {
+		background-color: SandyBrown ;
+		font-family: "Arial", "Times New Roman";
+		font-size: 20px; /* em, rem, cm, % (od 16) */
+		/*background-image: url('kafa.jpg');
+		background-repeat: no-repeat;
+		background-position: 10px 40px;*/
+		}
+		
+		h1 {color: DarkRed;}
+		h2 {color: Red;}
+		p {color: Purple;}
+		a {color: darkorange;
+		text-decoration: none;}
+		
+		img {
+		width: 400px;
+		heigh: 300px; 
+		margin: 10px;
+		padding: 30px;		/*i margin i padding mogu imati 4 3 2 ili jednu vrednost, 4 gornja desna donja leva
+		3 gornja, desna i leva, donja; 2 gornja i donja, leva i desna;
+		ukupan prostor = width + padding + borderwidth 6+ margin*/
+		
+		/*
+		border-color: black;
+		border-width: 2px;
+		border-style: dashed;  solid, dashed, dotted... 
+		*/
+		border:  2px solid black;
+		}
+		
+		.podnaslov2 {
+		text-align: center;
+		font:  20px "Times New Roman" bold;
+		
+		}
+		
+		.paragraf2 {
+		text-align: right;
+		font-size: 24px;
+		}
+		
+		#naslov {
+		color: green;
+		font-size: 48px;
+		}
+		
+		#p3 {
+		text-align: center;
+		color: red;
+		font-family: "Comic Sans MS";
+		}
+		</style>
+	</head>
+	
+	
+	<body>
+	<h1 id="naslov">Vežba 1</h1><!-- Ovo je naslov -->
+	<h2>Aleksa Stojanović</h2>
+	<h3 class="podnaslov2"> br. indeksa 2359</h3>
+		
+		<p>Ovo je prvi paragraf i ovde piše nešto bitno </p>
+		<p class="paragraf2">Ovo je drugi paragraf i ovde piše nešto bitno </p>
+		<p id="p3">Ovo je treci paragraf i ovde piše nešto bitno </p>
+		
+		
+		
+
+		
+		<p><img src="kafa.jpg" width="300px"></p>
+		<p>Veliki izbor <a href="http://greenet.rs/kafe-i-napici/" target="_blank">napitaka</a>:<ol>
+			
+	
+		<p>Vrati se na <a href="#naslov">vrh stranice</a>.</p>
+		<p>Pošalji mail <a href="mailto:aleksa_95@msn.com">ovde</a>.</p>
+		<p>Idi na <a href="Druga strana.html" >stranu 2</a>
+	</body>
+</html>

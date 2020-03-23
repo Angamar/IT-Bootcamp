@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>HTML Forme</title>
+
+<style>
+
+body{
+font-size: 18px;
+color: white;
+}
+
+legend {;
+font-size: 110%;
+font-weight: bold;
+}
+
+form {
+color: black;
+background: grey;
+width: 500;
+}
+
+.labele {
+display: inline-block;
+width: 100;
+}
+
+fieldset {
+background: lightgray;
+}
+
+.dugme{
+background-color: lightgrey;
+margin:2px;
+}
+
+.dugme:hover{
+background-color: cornflowerblue;
+}
+
+
+.dugme:active{
+background-color: darkslategrey;
+color: white;
+}
+input, textarea {
+
+border-radius: 6px;
+max-width:50%;
+}
+.specijalna { 
+width:5%;
+}
+
+
+div {
+padding: 4px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<form>
+	<fieldset><legend>Login details</legend>
+		<div>
+			<label class="labele">Name:</label><input type="text"> 
+		</div>
+
+		<div>
+			<label class="labele">E-mail:</label><input type="email"> 
+		</div>
+		
+		<div>
+			<label class="labele">Password:</label><input type="password"> 
+		</div>
+	</fieldset>	
+		
+		
+	<fieldset><legend>Your feedback</legend>
+
+		<div>
+			<label>Please check all the emotions that apply to you:</label> <br> 
+			<input class="specijalna" type="checkbox" name="emotion" value="angry"> Angry  <br> 
+			<input class="specijalna" type="checkbox" name="emotion" value="sad"> Sad  <br>
+			<input class="specijalna" type="checkbox" name="emotion" value="happy" checked> Happy <br>
+			<input class="specijalna" type="checkbox" name="emotion" value="ambivalent"> Ambivalent <br>
+		</div>
+	
+
+		<div>
+			<label>How satisfied were you with our service?</label> <br> 
+			<input class="specijalna" type="radio" name="satisfaction" value="4" > Very satisfied <br>
+			<input class="specijalna" type="radio" name="satisfaction" value="3"> Satisfied <br>
+			<input class="specijalna" type="radio" name="satisfaction" value="0"> Didn't care <br>
+			<input class="specijalna" type="radio" name="satisfaction" value="2"> Dissatisfied <br>
+			<input class="specijalna" type="radio" name="satisfaction" value="1"> Very dissatisfied <br>
+		</div>
+		
+		<div>
+			<label>Further comments:</label><br>
+			<textarea> </textarea> 
+		</div>
+	
+	</fieldset>
+
+	
+		<div>
+			<label>Bio photo:</label>
+			<input type="file"> 
+		</div>
+
+		
+		<div>
+		<label>Location visited:</label>
+		<select name="location"> 
+				<option value="" disabled selected>Select location</option>
+				<option value="Berlin">Berlin</option>
+				<option value="Paris" >Paris</option>
+				<option value="Budapest">Budapest</option>
+				<option value="Prague">Prague</option>
+			  </select>
+		</div>
+		
+		
+		<div>
+				
+				
+			
+		
+			</div>
+	
+	<input class="dugme" type="submit" value="Submit"> <br>
+	<input class="dugme" type="reset" value="Reset"> 
+
+</form>
+
+</body>
+	
+</html>

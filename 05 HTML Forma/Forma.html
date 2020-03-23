@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>HTML Forme</title>
+
+<style>
+
+body{
+font-size: 20px;
+}
+
+legend {
+border: 1px solid black;
+font-size: 110%;
+font-weight: bold;
+}
+
+form {
+background: grey;
+width: 400;
+}
+
+fieldset {
+background: lightgray;
+}
+
+.dugme{
+background-color: lightgrey;
+}
+
+.dugme:hover{
+background-color: cornflowerblue;
+}
+
+
+.dugme:active{
+background-color: darkslategrey;
+color: white;
+}
+input, textarea {
+
+border-radius: 6px;
+max-width:50%;
+}
+.specijalna { 
+width:5%;
+}
+
+input:focus, textarea:focus {
+border-radius: 6px;
+border: 1.5px solid greenyellow;
+}
+
+div {
+padding: 5px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<form>
+	<fieldset><legend>Lični podaci</legend>
+		<div>
+			<label>Ime:</label>
+			<input type="text" placeholder="Vaše ime"> 
+		</div>
+
+		<div>
+			<label>Prezime:</label>
+			<input type="text"  placeholder="Vaše prezime"> 
+		</div>
+
+		<div>
+			<label>Pol:</label><br>
+			<input class="specijalna" type="radio" name="pol" value="m" checked> muški
+			<input class="specijalna" type="radio" name="pol" value="z"> ženski
+			<input class="specijalna" type="radio" name="pol" value="n"> drugo
+		</div>
+
+		<div>
+			<label>E-mail:</label>
+			<input type="email" placeholder="adresa@nesto.com"> 
+		</div>
+		
+		<div>
+			<label>Lozinka:</label>
+			<input type="password"> 
+		</div>
+
+		<div>
+			<label>Godine:</label>
+			<input type="number" min="18" step="1"> 
+		</div>
+
+		<div>
+			<label>Skriveno polje:</label>
+			<input type="hidden"> 
+		</div>
+
+		<div>
+			<label>URL:</label>
+			<input type="url"> 
+		</div>
+
+		<div>
+			<label>Datum:</label>
+			<input type="date" min="2017-10-08" step="3"> 
+		</div>
+
+		<div>
+			<label>Vreme:</label>
+			<input type="time"> 
+		</div>
+
+		<div>
+			<label>Vaš CV:</label>
+			<input type="file"> 
+		</div>
+
+		<div>
+			<label>Vaše motivaciono pismo:</label><br>
+			<textarea> </textarea> 
+		</div>
+	</fieldset>
+
+	
+	<fieldset>
+		<legend>Ostale informacije:</legend>
+		<div>
+			<label>Unesite boju:</label>
+			<input type="color" value="#FF0000"> 
+		</div>
+
+		<div>
+			<label>Odaberite kurs:</label>
+			<input class="specijalna" type="radio" name="kurs" value="php" checked> PHP
+			<input class="specijalna" type="radio" name="kurs" value="qa"> QA
+			<input class="specijalna" type="radio" name="kurs" value="qa"> Java
+			<input class="specijalna" type="radio" name="kurs" value="qa"> C#
+		</div>
+		<div>
+			<label>Alati koje znam:</label>
+			<input class="specijalna" type="checkbox" name="alati" value="html"> HTML
+			<input class="specijalna" type="checkbox" name="alati" value="CSS"> CSS
+			<input class="specijalna" type="checkbox" name="alati" value="javascrpit"> Javascript
+		</div>
+
+		<div>
+				
+				
+			
+			</div>
+	</fieldset>
+	<input class="dugme" type="submit" value="Pošalji">
+	<input class="dugme" type="button" value="Poruka" onclick="alert('Zdravo svete!')"> 
+	<input class="dugme" type="reset" value="Resetuj"> 
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+	
+</html>

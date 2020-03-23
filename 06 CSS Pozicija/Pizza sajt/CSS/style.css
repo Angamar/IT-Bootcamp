@@ -1,0 +1,190 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+header {
+position: relative;
+height: 120px;
+background-color: lightblue;
+background-image: url('../images/pizzabackground.jpg'); /*.. idu korak unazad u folderu, posto se style dokument nalazi u css fajlu, a ne u imaages*/
+background-position: 0 -100; /* prva vrednost koliko slicica ide udesno, druga koliko slicica ide nadole*/
+background-repeat: repeat-x;
+font-size: 32px;
+font-weight: bold;
+color: white;
+}
+
+header div {
+z-index: 3;
+position: absolute;
+text-align: center;/*top: 0;  
+right: 0; gornji desni ugao*/
+
+/*bottom:0;
+left: 0; donji levi ugao*/
+top: 35%;
+width: 100%; /*da se div prosiri na celu sirinu hedera*/
+text-shadow: 0px 8px 6px black; /*levo/desno, gore/dole, debljina, boja*/
+}
+
+/*.drugi {
+overflow: hidden;
+z-index: 2;
+position: absolute;
+color: white;
+background-color: green;
+top: 10;
+left: 35;
+width: 300;
+height: 50;
+display: block;
+}
+
+h1, h2{
+display: inline;
+}*/
+
+nav {
+margin: 0 0;
+}
+
+nav ul {
+list-style-type: none;
+background-color: #303030;
+overflow: hidden;
+}
+
+nav li {
+float: left;
+width: 25%;
+}
+
+nav li a {
+text-align: center;
+display: block;
+color: white;
+padding: 14 16;
+text-decoration: none;
+border-right: 2px solid white;
+}
+
+nav li a:hover{
+font-weight: bold;
+background-color: red;
+}
+
+.topbar{
+position: fixed;
+top:0;
+width: 100%;
+z-index: 999;
+}
+
+.bottombar{
+position: fixed;
+bottom:0;
+width: 100%;
+z-index: 999;
+}
+
+#rest {
+position: relative;
+top: 46px;
+width: 100%;
+}
+
+.dropdown_content {
+display: none;
+position: absolute;
+width: 25%;
+background-color: #f9f9f9;
+}
+
+.dropup_content {
+display: none;
+position: absolute;
+width: 25%;
+bottom:46px;
+background-color: #f9f9f9;
+
+}
+.dropdown_content a,
+.dropup_content a {
+color: black;
+text-align: left;
+}
+
+.dropdown_content a:hover,
+.dropup_content a:hover{
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content,
+.dropup:hover .dropup_content
+{
+display:block;
+}
+
+.left_panel_float {
+float: left;
+width: 15%;
+clear: left;
+}
+
+h1,h2, h3{
+margin-top: 10;
+margin-bottom: 10;
+}
+
+h1{
+text-align: left;
+}
+
+ul{
+list-style-type: none;
+
+}
+
+aside li a {
+margin-bottom: 8;
+padding: 8;
+display: block;
+text-decoration: none;
+background-color: #33b5e5;
+color: white;
+}
+
+
+aside li a:hover {
+background-color: #0099cc;
+}
+
+.content_float {
+width: 100%;
+clear: right;
+
+}
+.content_float li {
+float: left;
+width: 25%;
+margin: 20 10;
+text-align: center;
+overflow: hidden;
+}
+
+ul li p{
+margin: 20 0;
+}
+article{
+display: block;
+width: 95%;
+clear: right;
+display:block;
+margin: 10 10 100 10;
+}
+
+aside {
+padding: 10 10 600 10;
+}
+
