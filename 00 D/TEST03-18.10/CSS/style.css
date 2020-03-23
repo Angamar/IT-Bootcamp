@@ -1,0 +1,103 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; /*da racuna sirinu ne samo elementa vec elementa sa svojim paddingom, borderom i marginom*/
+}
+
+header {
+    position: relative;
+    height:100px;
+    width:100%;
+    background-image: url('../images/header.jpg');
+}
+
+
+header h1, header p {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+header h1 {
+    position:absolute;
+    top:30%;
+    z-index: 100;
+}
+
+header p {
+    position:absolute;
+    top:60%;
+    z-index: 100;
+}
+
+footer {
+    z-index:100;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: blue;
+    overflow: hidden;
+    }
+    
+    nav li {
+    float: left;
+    }
+
+    nav li a {
+        text-align: center;
+        display: block;
+        color: white;
+        padding: 14 16;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+    background: lightgray;
+    color:black;
+    }
+    #meniDesno{
+        float: right;
+        }
+
+    section {
+        width: 75%;
+        float:left;
+        clear:left;
+        }
+        
+    aside{
+        float:right;
+        width: 25%; 
+        clear:right;
+    }
+
+    aside h2, section h2, section p{
+        margin: 10px;
+    }
+    .wraper:before, .wraper:after{
+    display: table;
+    content: "";
+    clear: both;
+    }
+
+    @media only screen and (max-width:600px){
+    nav li, #meniDesno {
+        float: none;
+    }
+   aside, section, img {
+       width: 100%;
+       text-align:justify; 
+       float:none;
+       clear:both;
+    }
+    aside img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    }

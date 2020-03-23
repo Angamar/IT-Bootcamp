@@ -1,0 +1,20 @@
+INSERT INTO it_bootcamp.tasks(task_id, title, start_date, task_status, description) 
+VALUES (1, "Dodaj tabelu", "2019-11-15", 0, "CREATE TABLE");
+
+INSERT INTO it_bootcamp.tasks(task_id, title, start_date, task_status, description) 
+VALUES (2, "Radi nesto drugo", "2019-11-15", 0, "SOMETHING ELSE");
+
+ALTER TABLE it_bootcamp.tasks
+MODIFY COLUMN task_status INT;
+
+//brisanje kolone 
+ALTER TABLE it_bootcamp.tasks
+DROP COLUMN task_status INT;
+
+// brisanje tabele
+DROP TABLE it_bootcamp.tasks1
+
+ALTER TABLE polaznici
+ADD COLUMN id_polaznik INT,
+ADD PRIMARY KEY(id_polaznik);
+

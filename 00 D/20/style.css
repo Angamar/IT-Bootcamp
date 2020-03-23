@@ -1,0 +1,26 @@
+*{
+    background: lightgray;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+ul{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.blue:hover {
+    background: blue;
+    color: white;
+    
+}
+
+.black:hover
+{
+    background: black;
+    color: yellow;
+}
